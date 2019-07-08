@@ -31,7 +31,7 @@ public class TestBase extends PageBase {
 	@BeforeClass
 	public void setUp() {
 		try {
-			localBrowserSelection(TestUtil.getPropertyFile().getProperty("chromebrowser"));
+			localBrowserSelection(TestUtil.getPropertyFile().getProperty("iebrowser"));
 			deleteBrowserCookies();
 			driver.manage().window().maximize();
 			if (System.getProperty("loginURL") != null && System.getProperty("loginURL") != "") {
